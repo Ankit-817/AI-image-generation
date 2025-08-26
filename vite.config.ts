@@ -5,6 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: './', // ✅ Add this line for correct asset paths in production
   server: {
     host: "::",
     port: 8080,
@@ -12,7 +13,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
     mode === 'development' &&
-    componentTagger(),
+      componentTagger(),
   ].filter(Boolean),
   resolve: {
     alias: {
