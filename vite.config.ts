@@ -19,4 +19,3 @@ export default defineConfig(({ mode }) => ({
     },
   },
 }));
-Set base path in vite.config.ts for production
