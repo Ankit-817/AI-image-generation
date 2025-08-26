@@ -81,3 +81,4 @@
     "vite": "^5.4.14"
   }
 }
+Fix package.json scripts for build and dev
