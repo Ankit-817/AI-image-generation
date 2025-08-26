@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: './', // ✅ important for Netlify deployment
+  base: './', // ✅ critical for Netlify deployment
   server: {
     host: "::",
     port: 8080,
